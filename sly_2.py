@@ -128,11 +128,12 @@ def analyze_tenders(tenders, edrpou, year):
 
 # ЗАПУСК
 if __name__ == "__main__":
-    EDRPOU = "00034074"  # ← заміни на потрібний
+    EDRPOU = "3202720074"  # ← заміни на потрібний
     YEAR = 2025
 
     tenders = get_tenders(EDRPOU, YEAR)
     if tenders:
         analyze_tenders(tenders, EDRPOU, YEAR)
     else:
+
         print("Тендери не знайдено :(")
